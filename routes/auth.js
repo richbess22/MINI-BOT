@@ -6,6 +6,7 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
+const { Op } = require('sequelize');
 const { User } = require('../database/models');
 const { authLimiter } = require('../middleware/rateLimiter');
 const { sendWelcomeEmail } = require('../services/emailService');
@@ -29,7 +30,7 @@ router.post('/register', authLimiter, async (req, res) => {
         // Check if user exists
         const existingUser = await User.findOne({
             where: {
-                $or: [{ email }, { username }]
+                [Op.or]: [{ email }, { username }]
             }
         });
 
