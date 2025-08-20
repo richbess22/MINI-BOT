@@ -388,7 +388,7 @@ async function SendSlide(socket, jid, newsItems) {
             imgBuffer = await resize(item.thumbnail, 300, 200);
         } catch (error) {
             console.error(`Failed to resize image for ${item.title}:`, error);
-            imgBuffer = await Jimp.read('https://i.ibb.co/qFJ08v4J/da3ed85877e73e60.jpg);
+            imgBuffer = await Jimp.read('https://i.ibb.co/qFJ08v4J/da3ed85877e73e60.jpg');
             imgBuffer = await imgBuffer.resize(300, 200).getBufferAsync(Jimp.MIME_JPEG);
         }
         let imgsc = await prepareWAMessageMedia({ image: imgBuffer }, { upload: socket.waUploadToServer });
