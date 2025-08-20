@@ -10,9 +10,7 @@ const Jimp = require('jimp');
 const crypto = require('crypto');
 const axios = require('axios');
 const yts = require("yt-search");
-const fetch = require("node-fetch"); 
-const api = `https://api-dark-shan-yt.koyeb.app`;
-const apikey = `edbcfabbca5a9750`;
+const fetch = require("node-fetch");  
 const { initUserEnvIfMissing } = require('./settingsdb');
 const { initEnvsettings, getSetting } = require('./settings');
 //=======================================
@@ -38,19 +36,13 @@ const config = {
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/L7PZrukTpBB3Nvzk70Fj1d?mode=ac_t',
-    ADMIN_LIST_PATH: './admin.json',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/',
     IMAGE_PATH: 'https://i.ibb.co/qFJ08v4J/da3ed85877e73e60.jpg',
-    NEWSLETTER_JID: '120363419333086422@newsletter',
-    NEWSLETTER_MESSAGE_ID: '428',
-    OTP_EXPIRY: 300000,
-    NEWS_JSON_URL: '',
-    BOT_NAME: 'MULLERI-MINI-BOT-V1',
-    OWNER_NAME: 'MULLER TECH',
+    BOT_NAME: 'QUEEN-MINI',
+    OWNER_NAME: 'DarkWinzo',
     OWNER_NUMBER: '2349166255902',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> © MULLER',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBiO8PEKyZ9i8Skkc3C',
+    BOT_FOOTER: '> © QUEEN-MINI',
     BUTTON_IMAGES: {
         ALIVE: 'https://files.catbox.moe/j7mio9.png',
         MENU: 'https://files.catbox.moe/j7mio9.png',
