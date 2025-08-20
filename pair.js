@@ -53,10 +53,10 @@ const config = {
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBiO8PEKyZ9i8Skkc3C',
     BUTTON_IMAGES: {
         ALIVE: 'https://files.catbox.moe/j7mio9.png',
-        MENU: 'https://files.catbox.moe/j7mio9.png'',
-        OWNER: 'https://files.catbox.moe/j7mio9.png'',
-        SONG: 'https://files.catbox.moe/j7mio9.png'',
-        VIDEO: 'https://files.catbox.moe/j7mio9.png''
+        MENU: 'https://files.catbox.moe/j7mio9.png',
+        OWNER: 'https://files.catbox.moe/j7mio9.png',
+        SONG: 'https://files.catbox.moe/j7mio9.png',
+        VIDEO: 'https://files.catbox.moe/j7mio9.png'
     }
 };
 
@@ -479,7 +479,6 @@ function setupCommandHandlers(socket, number) {
 
         try {
             switch (command) {   
-                // ALIVE COMMAND WITH BUTTON
                 case 'alive': {
                     const startTime = socketCreationTime.get(number) || Date.now();
                     const uptime = Math.floor((Date.now() - startTime) / 1000);
@@ -752,42 +751,8 @@ case 'menu': {
                     }
                     break;
                 }
-                
-                // NEWS COMMAND
-                case 'news': {
-                    await socket.sendMessage(sender, {
-                        text: '📰 Fetching latest news...'
-                    });
-                    const newsItems = await fetchNews();
-                    if (newsItems.length === 0) {
-                        await socket.sendMessage(sender, {
-                            image: { url: config.IMAGE_PATH },
-                            caption: formatMessage(
-                                '🗂️ NO NEWS AVAILABLE',
-                                '❌ No news updates found at the moment. Please try again later.',
-                                `${config.BOT_FOOTER}`
-                            )
-                        });
-                    } else {
-                        await SendSlide(socket, sender, newsItems.slice(0, 5));
-                    }
-                    break;
-                }
-            }
-        } catch (error) {
-            console.error('Command handler error:', error);
-            await socket.sendMessage(sender, {
-                image: { url: config.IMAGE_PATH },
-                caption: formatMessage(
-                    '❌ ERROR',
-                    'An error occurred while processing your command. Please try again.',
-                    `${config.BOT_FOOTER}`
-                )
-            });
-        }
-    });
-}
-
+        
+            
 // Setup message handlers
 function setupMessageHandlers(socket) {
     socket.ev.on('messages.upsert', async ({ messages }) => {
