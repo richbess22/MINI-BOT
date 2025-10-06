@@ -1,9 +1,9 @@
 /**
- * QUEEN-MINI Main Server
- * Copyright © 2025 DarkSide Developers
- * Owner: DarkWinzo
- * GitHub: https://github.com/DarkWinzo
- */
+ * ANUWH MIN Main Server
+ * Copyright © 2025 Anuga Senithu
+ * Owner: Anuga Senithu
+ * GitHub: https://github.com/cyberxdevsofficial
+ * WhatsApp: https://wa.me/94710695082
 
 const express = require('express');
 const http = require('http');
@@ -99,7 +99,7 @@ const startServer = async () => {
         server.listen(PORT, () => {
             console.log(chalk.green(`
 ╔══════════════════════════════════════════════════════════════╗
-║                        QUEEN-MINI v${config.APP_VERSION}                        ║
+║                        ANUWH MDMINI v${config.APP_VERSION}                        ║
 ║                  Advanced WhatsApp Bot System                 ║
 ║                                                              ║
 ║  🚀 Server running on: http://localhost:${PORT}                ║
@@ -109,7 +109,7 @@ const startServer = async () => {
 ║                                                              ║
 ║  Copyright © ${config.COPYRIGHT.YEAR} ${config.COPYRIGHT.COMPANY}                    ║
 ║  Owner: ${config.COPYRIGHT.OWNER}                                      ║
-║  GitHub: ${config.COPYRIGHT.GITHUB}                ║
+║  GitHub: ${config.COPYRIGHT.GITHUB}
 ╚══════════════════════════════════════════════════════════════╝
             `));
         });
