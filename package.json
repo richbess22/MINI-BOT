@@ -1,5 +1,5 @@
 {
-  "name": "queen-mini",
+  "name": "anuwh-mini",
   "version": "1.0.0",
   "description": "Advanced WhatsApp Bot Management System",
   "main": "index.js",
@@ -50,9 +50,9 @@
     "bot",
     "multi-device",
     "baileys",
-    "queen-mini",
+    "anuwh",
     "web-app"
   ],
-  "author": "DarkWinzo",
+  "author": "Anuga",
   "license": "MIT"
 }
