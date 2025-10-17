@@ -24,14 +24,14 @@ const sendWelcomeEmail = async (email, firstName, verificationToken) => {
     const mailOptions = {
         from: config.EMAIL_FROM,
         to: email,
-        subject: '🎉 Welcome to QUEEN-MINI - Verify Your Email',
+        subject: '🎉 Welcome to ANUWH-MINI - Verify Your Email',
         html: `
         <!DOCTYPE html>
         <html>
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Welcome to QUEEN-MINI</title>
+            <title>Welcome to ANUWH-MINI</title>
             <style>
                 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
                 .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
@@ -53,18 +53,18 @@ const sendWelcomeEmail = async (email, firstName, verificationToken) => {
         <body>
             <div class="container">
                 <div class="header">
-                    <h1>👑 QUEEN-MINI</h1>
+                    <h1>👑 ANUWH-MINI</h1>
                     <p>Advanced WhatsApp Bot Management System</p>
                 </div>
                 
                 <div class="content">
                     <div class="welcome-text">
                         <h2>Welcome, ${firstName}! 🎉</h2>
-                        <p>Thank you for joining QUEEN-MINI, the most advanced WhatsApp bot management platform. You're now part of an exclusive community of bot enthusiasts!</p>
+                        <p>Thank you for joining ANUWH-MINI, the most advanced WhatsApp bot management platform. You're now part of an exclusive community of bot enthusiasts!</p>
                     </div>
                     
                     <div class="features">
-                        <h3>🚀 What you can do with QUEEN-MINI:</h3>
+                        <h3>🚀 What you can do with ANUWH-MINI:</h3>
                         <div class="feature">
                             <div class="feature-icon">🤖</div>
                             <div>
@@ -132,14 +132,14 @@ const sendPasswordResetEmail = async (email, resetToken) => {
     const mailOptions = {
         from: config.EMAIL_FROM,
         to: email,
-        subject: '🔐 QUEEN-MINI - Password Reset Request',
+        subject: '🔐 ANUWH-MINI - Password Reset Request',
         html: `
         <!DOCTYPE html>
         <html>
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Password Reset - QUEEN-MINI</title>
+            <title>Password Reset - ANUWH-MINI</title>
             <style>
                 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
                 .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
