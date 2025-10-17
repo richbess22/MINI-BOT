@@ -7,7 +7,7 @@
 
 module.exports = {
     // Application Settings
-    APP_NAME: 'QUEEN-MINI',
+    APP_NAME: 'ANUWH-MINI',
     APP_VERSION: '2.0.0',
     APP_DESCRIPTION: 'Advanced WhatsApp Bot Management System',
     
@@ -36,7 +36,7 @@ module.exports = {
     PREFIX: '.',
     
     // Admin Configuration
-    ADMIN_EMAIL: 'admin@queen-mini.com',
+    ADMIN_EMAIL: 'admin@anugasenithu.com',
     ADMIN_PASSWORD: 'admin123', // Change this in production
     
     // Rate Limiting
