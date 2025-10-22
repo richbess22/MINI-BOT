@@ -4,18 +4,8 @@
  */
 
 const nodemailer = require('nodemailer');
-const config = require('../config');
+const config = require('../config
 
-// Create transporter
-const transporter = nodemailer.createTransporter({
-    host: config.EMAIL_HOST,
-    port: config.EMAIL_PORT,
-    secure: false,
-    auth: {
-        user: config.EMAIL_USER,
-        pass: config.EMAIL_PASS
-    }
-});
 
 // Send welcome email
 const sendWelcomeEmail = async (email, firstName, verificationToken) => {
