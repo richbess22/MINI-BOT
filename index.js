@@ -1,10 +1,3 @@
-/**
- * ANUWH MIN Main Server
- * Copyright © 2025 Anuga Senithu
- * Owner: Anuga Senithu
- * GitHub: https://github.com/cyberxdevsofficial
- * WhatsApp: https://wa.me/94710695082
-
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
